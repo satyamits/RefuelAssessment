@@ -8,7 +8,6 @@
 import Foundation
 
 struct Health: Codable {
-    
     let heartRate: Double
     let stepsCount: Double
 }

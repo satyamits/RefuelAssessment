@@ -20,16 +20,24 @@ class WatchAppSyncManagers: NSObject, ObservableObject {
     }
     
     func sendDateToiOS(model: Health) {
-        guard let dataToSend = try? JSONEncoder().encode(model) else { return }
-        if self.session.isReachable {
-            WCSession.default.sendMessage(["recordData" : dataToSend], replyHandler: nil)
-        } else {
-            WCSession.default.transferUserInfo(["recordData" : dataToSend])
+            guard WCSession.default.isReachable else {
+                print("iPhone not reachable")
+                return
+            }
+            do {
+                let data = try JSONEncoder().encode(model)
+                let dictionary: [String: Any] = ["health_data": data]
+                WCSession.default.sendMessage(dictionary, replyHandler: nil, errorHandler: { error in
+                    print("Send error: \(error.localizedDescription)")
+                })
+            } catch {
+                print("Encoding failed: \(error)")
+            }
         }
-    }
 }
 
 extension WatchAppSyncManagers: WCSessionDelegate {
+    
     
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: (any Error)?) {
     }

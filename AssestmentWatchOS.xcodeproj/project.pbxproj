@@ -56,6 +56,7 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Model/Health.swift,
+				Model/HealthSession.swift,
 			);
 			target = 5F7EBFB92DF406FB00C96618 /* WatchAppExtension */;
 		};
@@ -63,6 +64,13 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
+			);
+			target = 5F7EBFA52DF406DC00C96618 /* AssestmentWatchOS */;
+		};
+		5F7EC08A2DF4283900C96618 /* Exceptions for "WatchAppExtension" folder in "AssestmentWatchOS" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				HealthKitManagers/LiveHealthKitDelegate.swift,
 			);
 			target = 5F7EBFA52DF406DC00C96618 /* AssestmentWatchOS */;
 		};
@@ -80,6 +88,9 @@
 		};
 		5F7EBFBB2DF406FB00C96618 /* WatchAppExtension */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				5F7EC08A2DF4283900C96618 /* Exceptions for "WatchAppExtension" folder in "AssestmentWatchOS" target */,
+			);
 			path = WatchAppExtension;
 			sourceTree = "<group>";
 		};
