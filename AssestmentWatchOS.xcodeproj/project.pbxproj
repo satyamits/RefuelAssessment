@@ -6,14 +6,73 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		5F7EBFC42DF406FD00C96618 /* WatchAppExtension Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 5F7EBFBA2DF406FB00C96618 /* WatchAppExtension Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5F7EBFCB2DF4072A00C96618 /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F7EBFCA2DF4072A00C96618 /* WatchConnectivity.framework */; };
+		5F7EBFCD2DF4073200C96618 /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F7EBFCC2DF4073200C96618 /* WatchConnectivity.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5F7EBFC22DF406FD00C96618 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F7EBF9E2DF406DC00C96618 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F7EBFB92DF406FB00C96618;
+			remoteInfo = "WatchAppExtension Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5F7EBFC82DF406FD00C96618 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				5F7EBFC42DF406FD00C96618 /* WatchAppExtension Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		5F7EBFA62DF406DC00C96618 /* AssestmentWatchOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AssestmentWatchOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F7EBFBA2DF406FB00C96618 /* WatchAppExtension Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WatchAppExtension Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F7EBFCA2DF4072A00C96618 /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = System/Library/Frameworks/WatchConnectivity.framework; sourceTree = SDKROOT; };
+		5F7EBFCC2DF4073200C96618 /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS11.5.sdk/System/Library/Frameworks/WatchConnectivity.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		5F7EC01E2DF40DEE00C96618 /* Exceptions for "AssestmentWatchOS" folder in "WatchAppExtension Watch App" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Model/Health.swift,
+			);
+			target = 5F7EBFB92DF406FB00C96618 /* WatchAppExtension Watch App */;
+		};
+		5F7EC0222DF4111300C96618 /* Exceptions for "AssestmentWatchOS" folder in "AssestmentWatchOS" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 5F7EBFA52DF406DC00C96618 /* AssestmentWatchOS */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		5F7EBFA82DF406DC00C96618 /* AssestmentWatchOS */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				5F7EC0222DF4111300C96618 /* Exceptions for "AssestmentWatchOS" folder in "AssestmentWatchOS" target */,
+				5F7EC01E2DF40DEE00C96618 /* Exceptions for "AssestmentWatchOS" folder in "WatchAppExtension Watch App" target */,
+			);
 			path = AssestmentWatchOS;
+			sourceTree = "<group>";
+		};
+		5F7EBFBB2DF406FB00C96618 /* WatchAppExtension Watch App */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "WatchAppExtension Watch App";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -23,6 +82,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F7EBFCB2DF4072A00C96618 /* WatchConnectivity.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F7EBFB72DF406FB00C96618 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F7EBFCD2DF4073200C96618 /* WatchConnectivity.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -33,6 +101,8 @@
 			isa = PBXGroup;
 			children = (
 				5F7EBFA82DF406DC00C96618 /* AssestmentWatchOS */,
+				5F7EBFBB2DF406FB00C96618 /* WatchAppExtension Watch App */,
+				5F7EBFC92DF4072A00C96618 /* Frameworks */,
 				5F7EBFA72DF406DC00C96618 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,8 +111,18 @@
 			isa = PBXGroup;
 			children = (
 				5F7EBFA62DF406DC00C96618 /* AssestmentWatchOS.app */,
+				5F7EBFBA2DF406FB00C96618 /* WatchAppExtension Watch App.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		5F7EBFC92DF4072A00C96618 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5F7EBFCC2DF4073200C96618 /* WatchConnectivity.framework */,
+				5F7EBFCA2DF4072A00C96618 /* WatchConnectivity.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -55,10 +135,12 @@
 				5F7EBFA22DF406DC00C96618 /* Sources */,
 				5F7EBFA32DF406DC00C96618 /* Frameworks */,
 				5F7EBFA42DF406DC00C96618 /* Resources */,
+				5F7EBFC82DF406FD00C96618 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5F7EBFC32DF406FD00C96618 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				5F7EBFA82DF406DC00C96618 /* AssestmentWatchOS */,
@@ -68,6 +150,28 @@
 			);
 			productName = AssestmentWatchOS;
 			productReference = 5F7EBFA62DF406DC00C96618 /* AssestmentWatchOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5F7EBFB92DF406FB00C96618 /* WatchAppExtension Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F7EBFC52DF406FD00C96618 /* Build configuration list for PBXNativeTarget "WatchAppExtension Watch App" */;
+			buildPhases = (
+				5F7EBFB62DF406FB00C96618 /* Sources */,
+				5F7EBFB72DF406FB00C96618 /* Frameworks */,
+				5F7EBFB82DF406FB00C96618 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				5F7EBFBB2DF406FB00C96618 /* WatchAppExtension Watch App */,
+			);
+			name = "WatchAppExtension Watch App";
+			packageProductDependencies = (
+			);
+			productName = "WatchAppExtension Watch App";
+			productReference = 5F7EBFBA2DF406FB00C96618 /* WatchAppExtension Watch App.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -81,6 +185,9 @@
 				LastUpgradeCheck = 1640;
 				TargetAttributes = {
 					5F7EBFA52DF406DC00C96618 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					5F7EBFB92DF406FB00C96618 = {
 						CreatedOnToolsVersion = 16.4;
 					};
 				};
@@ -100,12 +207,20 @@
 			projectRoot = "";
 			targets = (
 				5F7EBFA52DF406DC00C96618 /* AssestmentWatchOS */,
+				5F7EBFB92DF406FB00C96618 /* WatchAppExtension Watch App */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		5F7EBFA42DF406DC00C96618 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F7EBFB82DF406FB00C96618 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +237,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5F7EBFB62DF406FB00C96618 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5F7EBFC32DF406FD00C96618 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5F7EBFB92DF406FB00C96618 /* WatchAppExtension Watch App */;
+			targetProxy = 5F7EBFC22DF406FD00C96618 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		5F7EBFB12DF406DD00C96618 /* Debug */ = {
@@ -249,10 +379,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AssestmentWatchOS/AssestmentWatchOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AssestmentWatchOS/Info.plist;
+				INFOPLIST_KEY_NSFileProviderDomainUsageDescription = "";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "This app needs access to your heart rate and steps for tracking fitness activity.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -276,10 +410,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AssestmentWatchOS/AssestmentWatchOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AssestmentWatchOS/Info.plist;
+				INFOPLIST_KEY_NSFileProviderDomainUsageDescription = "";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "This app needs access to your heart rate and steps for tracking fitness activity.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -295,6 +433,66 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5F7EBFC62DF406FD00C96618 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "WatchAppExtension Watch App/WatchAppExtension Watch App.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = WatchAppExtension;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "This app needs access to your heart rate and steps for tracking fitness activity.";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.ecart.AssestmentWatchOS;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ecart.AssestmentWatchOS.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 11.5;
+			};
+			name = Debug;
+		};
+		5F7EBFC72DF406FD00C96618 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "WatchAppExtension Watch App/WatchAppExtension Watch App.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = WatchAppExtension;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "This app needs access to your heart rate and steps for tracking fitness activity.";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.ecart.AssestmentWatchOS;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ecart.AssestmentWatchOS.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 11.5;
 			};
 			name = Release;
 		};
@@ -315,6 +513,15 @@
 			buildConfigurations = (
 				5F7EBFB42DF406DD00C96618 /* Debug */,
 				5F7EBFB52DF406DD00C96618 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F7EBFC52DF406FD00C96618 /* Build configuration list for PBXNativeTarget "WatchAppExtension Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F7EBFC62DF406FD00C96618 /* Debug */,
+				5F7EBFC72DF406FD00C96618 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
