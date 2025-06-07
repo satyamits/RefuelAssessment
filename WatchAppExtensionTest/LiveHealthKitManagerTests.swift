@@ -1,5 +1,13 @@
+//
+//  LiveHealthKitManagerTests.swift
+//  AssestmentWatchOS
+//
+//  Created by Satyam Singh on 07/06/25.
+//
+
+
 import XCTest
-@testable import YourAppTargetName // replace with your actual module name
+@testable import WatchAppExtension
 
 final class LiveHealthKitManagerTests: XCTestCase {
 
